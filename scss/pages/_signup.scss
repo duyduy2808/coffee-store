@@ -1,0 +1,152 @@
+
+@use "../abstract";
+.auth
+{
+    min-height: 100vh;
+    background: var(--auth-bg);
+    @supports (-webkit-touch-callout: none)
+    {
+        min-height: -webkit-fill-available;
+    }
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__,
+    &__content
+    {
+        flex: 1;
+    }
+    &__intro
+    {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-items: center;
+       gap: 50px;
+       padding: 0 30px;
+       
+        &--text
+        {
+            max-width: 412px;
+            color: var(--intro-text);
+            text-align: center;
+            // font-feature-settings: 'liga' off, 'clig' off;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px; /* 144.444% */
+        }
+        &--img
+        {
+            width: 100%;
+        }
+        &-logo
+        {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            translate: -50%;
+        }
+    }
+    &__content
+    {
+        background: var(--auth-content-bg);
+        padding: 0 30px;
+        &--inner
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            width: min(460px, 100%);
+            margin: 50px auto;
+            @include abstract.breakpoint(md)
+            {
+                margin: 20px auto;
+            }
+        }
+        @include abstract.breakpoint(md)
+        {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            overflow-y: auto;
+            transition: translate 0.3s;
+            &.hide
+            {
+                translate: 100%;
+            }
+        }
+    }
+    &__heading
+    {
+        margin-top: 50px;
+        color: var(--auth-heading-color) ;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 44px; /* 146.667% */
+
+    }
+    &__desc
+    {
+        margin-top: 10px;
+        // margin-bottom: 50px;
+        padding: 0 30px;
+        color: #9E9DA8;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px; /* 146.667% */
+    }
+    &__form
+    {
+        width: 100%;
+        margin-top: 60px;
+        &--message
+        {
+            margin-top: 0;
+        }
+    }
+    &__link
+    {
+        color:  #0071DC;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px; /* 146.667% */
+    }
+    &__btn-gr
+    {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        gap: 30px;
+    }
+    &__btn-gmail
+    {
+        gap: 10px;
+    }
+    &__text
+    {
+        margin-top: 108px;
+        color:  #9E9DA8;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px; /* 144.444% */
+        @include abstract.breakpoint(md)
+        {
+            margin-top: 30px;
+        }
+    }
+    &__sign-up
+    {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+}
+.btn__icon
+{
+    filter: var(--icon-color);
+}

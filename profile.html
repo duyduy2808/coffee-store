@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIPPING | GROCERYmart</title>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- SCRIPTS -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+    <main class="product-page product-page__checkout">
+        <div class="container">
+            <!--  SEARCH BAR -->
+            <div class="product-container">
+                <div class="product-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name="" id="" placeholder="Search for item" class="search-bar__input" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row profile-container">
+                <div class="col-3 col-lg-12">
+                    <aside class="profile">
+                        <div class="profile-user">
+                            <img src="./assets/img/ava_1.png" alt="" class="profile-user__avatar">
+                            <h3 class="profile-user__heading">Imran Khan</h3>
+                            <p class="profile-user__desc">Registered: 17th May 2022</p>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile__list">
+                                <h3 class="profile__item--heading">Manage Account</h3>
+                                <a href="./personal-info.html" class="">
+                                    <div class="profile__item">
+                                        <img src="./assets/icons/profile/personal.svg" alt="" class="profile__item--icon">
+                                        <p class="profile__item--desc">Personal info</p>
+                                    </div>
+                                </a>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/address.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Addresses</p>
+                                </div>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/commu.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Communications & privacy</p>
+                                </div>
+                            </div>
+                            <div class="profile__list">
+                                <h3 class="profile__item--heading">My items</h3>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/reorder.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Reorder</p>
+                                </div>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/heart.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Lists</p>
+                                </div>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/regis.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Registries</p>
+                                </div>
+                            </div>
+                            <div class="profile__list">
+                                <h3 class="profile__item--heading">Subscriptions & planst</h3>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/protection.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Protection plans</p>
+                                </div>
+                            </div>
+                            <div class="profile__list">
+                                <h3 class="profile__item--heading">Customer Service</h3>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/help.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Help</p>
+                                </div>
+                                <div class="profile__item">
+                                    <img src="./assets/icons/profile/term.svg" alt="" class="profile__item--icon">
+                                    <p class="profile__item--desc">Terms of Use</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-9 col-lg-12">
+                    <div class="my-wallet">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <h3 class="my-wallet__heading">My Wallet</h3>
+                                <p class="my-wallet__desc">Payment methods</p>
+
+                                <div class="row row-cols-3 row-cols-xl-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <article class="payment-card" style="--bg-color: #1e2e69">
+                                            <img src="./assets/icons/profile/plane.svg" alt="" class="payment-card__icon">
+                                            <div class="payment-card__top">
+                                                <img src="./assets/icons/profile/plane2.svg" alt="" class="payment-card__top--icon">
+                                                <h3 class="payment-card__top--heading">FeatherCard</h3>
+                                            </div>
+                                            <p class="payment-card__num">1234 4567 8901 2221</p>
+                                            <div class="payment-card__bottom">
+                                                <div class="payment-card__item">
+                                                    <span class="payment-card__title">Card Holder</span>
+                                                    <span class="payment-card__info">Imran Khan</span>
+                                                </div>
+                                                <div class="payment-card__item">
+                                                    <span class="payment-card__title">Expired</span>
+                                                    <span class="payment-card__info">10/22</span>
+                                                </div>
+                                                <div class="payment-card__circle">
+                                                    <img src="./assets/icons/profile/oval.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col">
+                                        <article class="payment-card" style="--bg-color: #354151">
+                                            <img src="./assets/icons/profile/plane.svg" alt="" class="payment-card__icon">
+                                            <div class="payment-card__top">
+                                                <img src="./assets/icons/profile/plane2.svg" alt="" class="payment-card__top--icon">
+                                                <h3 class="payment-card__top--heading">FeatherCard</h3>
+                                            </div>
+                                            <p class="payment-card__num">1234 4567 8901 2221</p>
+                                            <div class="payment-card__bottom">
+                                                <div class="payment-card__item">
+                                                    <span class="payment-card__title">Card Holder</span>
+                                                    <span class="payment-card__info">Imran Khan</span>
+                                                </div>
+                                                <div class="payment-card__item">
+                                                    <span class="payment-card__title">Expired</span>
+                                                    <span class="payment-card__info">10/22</span>
+                                                </div>
+                                                <div class="payment-card__circle">
+                                                    <img src="./assets/icons/profile/oval.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col new-card">
+                                        <a class="new-card__inner" href="./add-new-card.html">
+                                            <img
+                                                src="./assets/icons/plus.svg"
+                                                alt=""
+                                                class="new-card__icon icon"
+                                            />
+                                            <p class="new-card__text">Add New Card</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- INFO -->
+                        <div class="account">
+                            <h3 class="account__heading">Account info</h3>
+                            <p class="account__desc">Addresses, contact information and password</p>
+                            <div class="row g-2 row-cols-2 row-cols-md-1">
+                                <div class="col">
+                                    <div class="account-info">
+                                        <div class="account-info__thumb">
+                                            <img src="./assets/icons/profile/commu.svg" alt="" class="account-info__img">
+                                        </div>
+                                        <div class="account-info__text">
+                                            <p class="account-info__title">Email Address</p>
+                                            <p class="account-info__desc">tarek97.ta@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="account-info">
+                                        <div class="account-info__thumb">
+                                            <img src="./assets/icons/profile/phone.svg" alt="" class="account-info__img">
+                                        </div>
+                                        <div class="account-info__text">
+                                            <p class="account-info__title">Phone number</p>
+                                            <p class="account-info__desc">+000 11122 2345 657</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="account-info">
+                                        <div class="account-info__thumb">
+                                            <img src="./assets/icons/profile/address.svg" alt="" class="account-info__img">
+                                        </div>
+                                        <div class="account-info__text">
+                                            <p class="account-info__title">Add an address</p>
+                                            <p class="account-info__desc">Bangladesh Embassy, Washington, DC 20008</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-info__list">
+                            <h3 class="cart-info__item--heading">Items details</h3>
+                            <article class="cart-item">
+                                <a href="./product-detail.html">
+                                    <img src="./assets/img/category/cate-img-1.png" alt="" class="cart-item__thumb">
+                                </a>
+                                <div class="cart-item__content profile__bot-content">
+                                    <h2 class="cart-item__title profile__title--bot">Coffee Beans - Espresso Arabica and Robusta Beans</h2>
+                                    <div class="cart-item__act profile--act">
+                                        <div class="cart-item__total">$47.00</div>
+                                        <a href="" class="btn btn--primary btn--rounded">Add to cart</a>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+                            <div class="cart-item__seperate"></div>
+                            <!-- ITEM 2 -->
+                            <article class="cart-item">
+                                <a href="./product-detail.html">
+                                    <img src="./assets/img/category/cate-img-1.png" alt="" class="cart-item__thumb">
+                                </a>
+                                <div class="cart-item__content profile__bot-content">
+                                    <h2 class="cart-item__title profile__title--bot">Coffee Beans - Espresso Arabica and Robusta Beans</h2>
+                                    <div class="cart-item__act profile--act">
+                                        <div class="cart-item__total">$47.00</div>
+                                        <a href="" class="btn btn--primary btn--rounded">Add to cart</a>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    <!-- modal / MODAL confirm delete -->
+    <div id="modal" class="modal hide">
+        <div class="modal__content">
+            <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam soluta quod impedit deleniti autem harum in pariatur ab quaerat!</p>
+            <div class="modal__bottom">
+                <button class="btn btn--text modal__btn js-toggle" toggle-target="#modal">Cancel</button>
+                <button class="btn btn--primary modal__btn js-toggle" toggle-target="#modal">Confirm</button>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#modal"></div>
+    </div>
+    <!-- MODAL ADD NEW ADDRESS -->
+    <div id="add-new-add" class="modal hide">
+        <div class="modal__content">
+            <form action="" class="form">
+                <h2 class="modal__heading">Add new shipping address</h2>
+                <div class="modal__body">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="name" class="form__label form__label--small">Name</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Name"
+                                    class="form__input"
+                                    required
+                                    minlength="2"
+                                />
+                                <!-- <img src="./assets/icons/form__error.svg" alt="" class="form__input-icon-error" /> -->
+                            </div>
+                            <p class="form__error">Name must be at least 2 characters</p>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label form__label--small">Phone</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Phone"
+                                    class="form__input"
+                                    required
+                                    minlength="10"
+                                />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">Phone must be at least 10 characters</p>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="address" class="form__label form__label--small">Address</label>
+                        <div class="form__text-area">
+                            <textarea
+                                name="address"
+                                id="address"
+                                placeholder="Address (Area and street)"
+                                class="form__text-area-input"
+                                required
+                            ></textarea>
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Address not empty</p>
+                    </div>
+                    <div class="form__group">
+                        <label for="city" class="form__label form__label--small">City/District/Town</label>
+                        <div class="form__text-input form__text-input--small">
+                            <input
+                                type="text"
+                                name=""
+                                placeholder="City/District/Town"
+                                id="city"
+                                readonly
+                                class="form__input js-toggle"
+                                toggle-target="#city-dialog"
+                            />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+
+                            <!-- Select dialog -->
+                            <div id="city-dialog" class="form__select-dialog hide">
+                                <h2 class="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
+                                <button
+                                    class="form__close-dialog d-none d-sm-block js-toggle"
+                                    toggle-target="#city-dialog"
+                                >
+                                    &times
+                                </button>
+                                <div class="form__search">
+                                    <input type="text" placeholder="Search" class="form__search-input" />
+                                    <img src="./assets/icons/search.svg" alt="" class="form__search-icon icon" />
+                                </div>
+                                <ul class="form__options-list">
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option form__option--current">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                    <li class="form__option">Ha Noi</li>
+                                    <li class="form__option">Ho Chi Minh</li>
+                                    <li class="form__option">Da Nang</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="form__error">Phone must be at least 11 characters</p>
+                    </div>
+                    <div class="form__group form__group--inline">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" id="" class="form__checkbox-input d-none" />
+                            <span class="form__checkbox-label">Set as default address</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <button class="btn btn--small btn--text modal__btn js-toggle" toggle-target="#add-new-add">
+                        Cancel
+                    </button>
+                    <button
+                        class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
+                        toggle-target="#add-new-add"
+                    >
+                        Create
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@use "../abstract";
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    
+    &__title
+    {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 32px; 
+        // filter: var(--icon-color);
+    }
+    
+}

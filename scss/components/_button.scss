@@ -1,0 +1,55 @@
+
+
+//BUTTONS
+.btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F8FB;
+    padding: 0 20px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    user-select: none;
+    white-space: nowrap;
+    +.btn
+    {
+        &:not(.btn--no-margin)
+        {
+            margin-left: 20px;
+        }
+        
+    }
+    &--text
+    {
+        background: transparent;
+        font-weight: 400;
+        color: #9E9DA8;
+    }
+    &--primary
+    {
+        background: #FFB700;
+    }
+    &--outline
+    {
+        background: transparent;
+        border: 1px solid #D2D1D6;
+    }
+    &--rounded
+    {
+        border-radius: 99px;
+
+    }
+    &[disabled],
+    &--disable
+    {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &:hover
+    {
+        opacity: 0.9;
+    }
+}

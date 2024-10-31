@@ -1,0 +1,32 @@
+@use "../abstract";
+
+.breadcums
+{
+    background: var(--breakcums-bg-color);
+    box-shadow: var(--breakcums-boxshadow);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+    &__item
+    {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #9E9DA8;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        &:last-of-type
+        {
+            color: var(--last-item);
+        }
+        @include abstract.breakpoint(md)
+        {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use "../abstract";
+
+.favorite
+{
+    &__heading
+    {
+        margin-bottom: 0;
+    }
+    &__list
+    {
+        margin-top: 30px;
+    }
+    &__left
+    {
+        flex: 1;
+    }
+    &__bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include abstract.breakpoint(md)
+        {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+}

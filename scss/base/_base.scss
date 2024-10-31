@@ -1,0 +1,86 @@
+@use "../abstract";
+
+*, ::before, ::after
+{
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 1.6rem;
+    font-family: "Gordita", sans-serif;
+    color: var(--text-color);
+    background: var(--body-bg-color);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+button, 
+input, 
+textarea, 
+select
+{
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+input
+{
+    background: transparent;
+    border: none;
+}
+.icon
+{
+    filter: var(--icon-color);
+}
+.container
+{
+    @include abstract.breakpoint(sm)
+    {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+.like-btn
+{
+    width: 50px;
+    height: 50px;
+    &:not(&--liked) .product-card__btn-icon--liked
+    {
+        display: none;
+    }
+    &--liked .product-card__btn-icon
+    {
+        display: none;
+    }
+}
+.product-card__btn-icon--liked
+{
+    margin-top: 8px;
+}
+
+i, em
+{
+    font-style: italic;
+}
+b, strong
+{
+    font-weight: 600;
+}
+u
+{
+    text-decoration: underline;
+}

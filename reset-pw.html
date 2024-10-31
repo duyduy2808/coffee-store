@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset password |Gocerymart</title>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- SCRIPTS -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+    <main class="auth">
+        <!-- AUTH intro -->
+        <div class="auth__intro">
+            <a href="#1" class="logo auth__intro-logo d-none d-md-flex">
+                <img src="./assets/icons/logo.svg" alt="" class="logo__img">
+                <h1 class="logo__title">grocerymart</h1>
+            </a>
+            <img src="./assets/img/signup/forgot.png" alt="" class="auth__intro--img">
+            <p class="auth__intro--text"> The best of luxury brand values, high quality products, and innovative services</p>
+            <button class="auth__intro--next d-none d-md-block js-toggle" toggle-target="#auth__content">
+                <img src="./assets/img/signup/arrow_next.svg" alt="">
+            </button>
+        </div>
+        <!-- AUTH content -->
+        <div id="auth__content" class="auth__content hide">
+            <div class="auth__content--inner">
+                <!-- LOGO -->
+                <a href="./index.html" class="logo">
+                    <img src="./assets/icons/logo.svg" alt="" class="logo__img">
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <h1 class="auth__heading">Reset Password</h1>
+                <p class="auth__desc"> Please type new password here!!!</p>
+                <div class="message message--success message--auth">
+                    We have emailed your password reset your link
+                </div>
+                <form action="./create-new-pw.html" class="form auth__form auth__form--message">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="email" name="" id="" placeholder="email" class="form__input" required>
+                            <img src="./assets/img/signup/message.svg" alt="" class="form__input-icon">
+                            <img src="./assets/icons/form__error.svg" alt="" class="form__input-icon--error" style="width: 24px;">
+                        </div>
+                        <p class="form__error">Email chua dung yeu cau</p>
+                    </div>
+                    <div  class="form__group auth__btn-gr">
+                        <button class="btn btn--primary" >Confirm</button>
+                    </div>
+                </form>
+                <p class="auth__text">
+                    Don’t have an account yet?
+                    <a href="./Sign in.html" class="auth__link">Back to sign in</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.dispatchEvent(new Event("template-loaded"));
+    </script>
+</body>
+</html>
